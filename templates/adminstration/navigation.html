@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
++<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+            display: inline-block;
+        }
+        a{
+            font-size: 18px;font-weight: bold;margin-left: 50px;
+            color:rgb(255, 255, 255);
+            text-decoration: none;
+            
+        }
+        .link{
+            background-color: green;
+            margin-left: 1300px;
+            border-radius: 20px;
+            padding: 10px;
+            width: 90px;
+            transition: 0.5s ease;
+            text-decoration: none;
+        }
+        .link:hover{
+            background-color: red;
+        }
+        .link{
+            color: white; font: bold;font-size: 15px;
+        }
+        .abc{
+            background-color: purple;
+            padding: 30px;
+        }
+        .bcd{
+            height: 1000px;
+        background-image: url(https://cismycro.com/assets/img/agency/access-control.png);   
+        background-repeat: no-repeat; 
+
+        }
+    </style>
+</head>
+<body>
+    <DIV  class="abc">
+        <UL>
+            
+            <li><a href="/manage_user">Manage User</a></li>
+            <li><a href="/feedback">Feedback</a></li>
+            <li><a href="/complaint">Complaint</a></li>
+            <a href="{% url 'login' %}" class="link">Log out</a>
+        </UL>
+    </DIV>
+    <div class="bcd"> </div>
+</body>
+</html>

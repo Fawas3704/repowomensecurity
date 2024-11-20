@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+ body{
+    background-image: url(https://cismycro.com/assets/img/agency/access-control.png); 
+    background-repeat: no-repeat;
+background-size: contain;
+}
+.shafeek{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 400px;
+    width: 400px;
+    padding: 50px;
+    margin-left: 700px;
+    margin-top: 200px;
+    border-radius: 25px;
+}
+h1{
+    color:purple;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+}
+.dot{
+    height: 30px;
+    width: 105px;
+    color: rgb(41, 30, 204);
+    border-radius: 5px;
+    margin-left: 110px;
+    margin-top: 20px;
+}
+.dot:hover{
+    color: azure;
+    background: yellowgreen;
+}
+
+input{
+    padding: 8px;
+    margin: 10px;
+    border-radius: 5px;
+    width: 100%;
+}

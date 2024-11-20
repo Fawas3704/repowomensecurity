@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device=width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="shafeek">
+    <form action="" method="post">
+        {% csrf_token %}
+        <h1>Complaint</h1> 
+        <input type="text" value="{{obj.Complaint}}"> 
+        <label for="Reply"id= "sha">Reply</label>
+        <input type="text"placeholder=Reply  name="Reply" value="{{obj.Reply}}"><br>
+        <button type="submit" class="dot">submit</button>
+    </form> 
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device=width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    <div class="shafeek">
+    <form action method="post">
+        {% csrf_token %}
+        <h1>Login form</h1>
+        <label for="user name">User Name</label>
+        <input type="text" placeholder="username" name="username">  
+        <label for="password"id= "sha">Password:</label>
+        <input type="password"placeholder=password password name="password"><br>
+        <button class="dot">Login</button>
+    </form>
+</div>
+</body>
+</html>
