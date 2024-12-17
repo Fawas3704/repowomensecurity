@@ -24,8 +24,7 @@ class FeedbackTable(models.Model):
     Feedback = models.CharField(max_length=100, null=True, blank=True)
     Date = models.DateTimeField(null=True,blank=True)
     
-
-
+    
 class ComplaintTable(models.Model):
     USER =  models.ForeignKey(UserTable, on_delete=models.CASCADE)
     Complaint = models.CharField(max_length=100, null=True, blank=True)   

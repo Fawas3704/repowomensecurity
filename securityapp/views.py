@@ -61,10 +61,24 @@ class navigation(View):
     
 
 
+# //////////////////////////////////////// API ////////////////////////////////////////////////////////////////
 
+class UserReg(APIView):
+    def post(self,request):
+        print("###############",request.data)
+        user_serial=UserSerializer(request.data)
+        login_serial=LoginSerializer(data=request.data)
+        data_valid=user_serial.is_valid()
+        login_valid=login_serial.is_valid()
 
-
-
+        if data_valid and login_valid:
+           print("&&&&&&&&&&&&&&&&&")
+           password=request.data['password']
+           login_profile=login_serial.save(user_type='USER', password=password)
+           user_serial.save(LOGIN=login_profile)
+           return Responce(user_serial.data, status=status.HTTP_201_CREATED)
+        return Response({'login_error': login_serial.errors if not login_valid else None,
+                         'user_error': user_serial.errors if not data_valid else None}, status=status.HTTP_400)
 
 
 
